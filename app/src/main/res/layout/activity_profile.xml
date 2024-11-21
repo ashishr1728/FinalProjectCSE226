@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="45dp"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:layout_marginVertical="4dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:layout_marginVertical="4dp"
+            android:layout_marginHorizontal="45dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share"
+            android:layout_marginVertical="4dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="390dp"
+        android:layout_height="640dp"
+        android:layout_marginVertical="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/black_border">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/circular_border"
+                    android:scaleType="fitXY"
+                    android:layout_marginVertical="10dp"/>
+
+                <TextView
+                    android:id="@+id/change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Picture"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginHorizontal="45dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Username"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:text="Ashish"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:text="abc123@gamil.com"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Mobile No."
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:text="1234567890"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Address"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/adress"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:text="123 deep nagar"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Gender"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:text="Male"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Date Of Birth"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:textSize="20dp"
+                    android:text="03/07/2002"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Age"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:text="21"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="City"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:text="Jalandhar"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="State"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:text="Punjab"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Country"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:text="India"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/box"/>
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:text="Edit Profile"
+                    android:textSize="22sp"
+                    android:backgroundTint="@color/aqua_blue"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
